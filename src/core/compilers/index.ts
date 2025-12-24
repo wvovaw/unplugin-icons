@@ -11,6 +11,7 @@ import { SolidCompiler } from './solid'
 import { SvelteCompiler } from './svelte'
 import { Vue2Compiler } from './vue2'
 import { Vue3Compiler } from './vue3'
+import { Vue3VaporCompiler } from './vue3-vapor'
 import { WebComponentsCompiler } from './web-components'
 
 export const compilers: Record<Exclude<ResolvedOptions['compiler'], CustomCompiler>, Compiler> = {
@@ -24,6 +25,7 @@ export const compilers: Record<Exclude<ResolvedOptions['compiler'], CustomCompil
   'svelte': SvelteCompiler,
   'vue2': Vue2Compiler,
   'vue3': Vue3Compiler,
+  'vue3-vapor': Vue3VaporCompiler,
   'web-components': WebComponentsCompiler,
   'qwik': QwikCompiler,
 }
